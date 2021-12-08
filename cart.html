@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style-cart.css">
+
+    <link rel="icon" href="assets/img/icon/1.ico" type="image/icon type">
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font awesome -->
+    <title>Amad Furniture</title>
+</head>
+<body >
+    <div class="content" id="header">
+        <div class="sidebar">
+            <div class="sidebar--content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo/logo.png" alt=""  class="">
+                    </a>
+                </div>
+                
+                <div class="option">
+                    <div class="orange-lines"></div>
+                    <a href="index.html" class="">HOME</a>
+                    <a href="shop.html" class="">SHOP</a>
+                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="#" class="">CART</a>
+                    <a href="checkout.html" class="">CHECKOUT</a>
+                    <div class="option-btn">
+                        <button class="">%Discount%</button>
+                        <button class="">New this week</button>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="" class="">CART <span>(0)</span></a>
+                    </div>
+                    <div class="favourite">
+                        <i class="fas fa-star"></i>
+                        <a href="" class="">FAVOURITE</a>
+                    </div>
+                    <div onclick="showSearchBar()" class="search">
+                        <i class="fas fa-search"></i>
+                        <a class="">SEARCH</a>
+                    </div>
+                    <div class="search-bar show-seacrh-bar">
+                        <div class="container">
+                            <i class="fas fa-search" ></i>
+                            <input onkeyup="showClearInput()"type="text" placeholder="Type your keyword..." class="">
+                            <div  onclick="clearInput()" class="clear-input-btn fas fa-times "> </div>
+                            <div onclick="hideSearchBar()" class="close-btn fas fa-times"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container shopping-cart">
+            <div class="row title">
+                <h3 class="">Shopping Cart</h3>
+            </div>
+            <div class="row content">
+                <div class="cart col-8">
+                    <div class="row row-name">
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <p class="">Name</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="">Price</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="">Quantity</p>
+                        </div>
+                    </div>
+                    <div class="row row-products">
+                        <div class="col-3">
+                            <img src="assets/img/product-big/pro-big-1.jpg" alt="" class="">
+                        </div>
+                        <div class="col-3">
+                            <p class="">White Modern chair</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="">$80</p>
+                        </div>
+                        <div class="col-3">
+                            <div class="quantity">
+                                <p class="">Qty</p>
+                                <div class="up-down">
+                                    <i onclick="minus()"class="fas fa-minus"></i>
+                                    <span class="">1</span>
+                                    <i onclick="plus()" class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-products">
+                        <div class="col-3">
+                            <img src="assets/img/product-big/pro-big-2.jpg" alt="" class="">
+                        </div>
+                        <div class="col-3">
+                            <p class="">Modern Roking chair</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="">$100</p>
+                        </div>
+                        <div class="col-3">
+                            <div class="quantity">
+                                <p class="">Qty</p>
+                                <div class="up-down">
+                                    <i onclick="minus()"class="fas fa-minus"></i>
+                                    <span class="">1</span>
+                                    <i onclick="plus()" class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-products">
+                        <div class="col-3">
+                            <img src="assets/img/product-big/pro-big-3.jpg" alt="" class="">
+                        </div>
+                        <div class="col-3">
+                            <p class="">Metallic chair</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="">$180</p>
+                        </div>
+                        <div class="col-3">
+                            <div class="quantity">
+                                <p class="">Qty</p>
+                                <div class="up-down">
+                                    <i onclick="minus()"class="fas fa-minus"></i>
+                                    <span class="">1</span>
+                                    <i onclick="plus()" class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total col-3 ">
+                    
+                    <h4 class="">Cart Total</h4>
+                    <div class="wrapper">
+                        <div class="">
+                            <span class=""> Subtotal: </span>
+                            <span class=""> $140.00 </span>
+                        </div>
+                        <div class="">
+                            <span class=""> Delivery: </span>
+                            <span class=""> Free </span>
+                        </div>
+                        <div class="">
+                            <span class=""> total: </span>
+                            <span class=""> $140.00 </span>
+                        </div>    
+                    </div>
+                    
+
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+                <div class="blank col-1"></div>
+            </div>    
+        </div>
+        
+
+    </div>
+    
+    <div class="discount">
+        <div class="discount-wrapper">
+            <div class="discount-left">
+                <h2>Subscribe for a <span>25% Discount</span></h2>
+                <p class="">
+                    Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. 
+                    Donec auctor interdum purus, ac finibus massa bibendum nec.
+                </p>
+            </div>
+            <div class="discount-right">
+                <form class="input-wrapper">
+                    <input type="email" id="email" name="email"class="" placeholder="Your E-mail">
+                    <input type="submit"class=""value="Subscribe">
+                </form>
+            </div>    
+        </div>
+        
+            
+        </div>
+    
+    <div class="fotter">
+        <div class="fotter-wrapper">
+            <div class="left">
+                <img src="assets/img/logo/logo-white.png" alt="" class="">
+                <p class="">
+                    Copyright ©2021 All rights reserved | This template is made with  
+                    <span class="far fa-heart"></span>
+                    by Colorlib & Re-distributed by Themewagon</p>
+            </div>
+            <div class="right">
+                <div class="fotter-nav">
+                    <a href="index.html" class="">HOME</a>
+                    <a href="shop.html" class="">SHOP</a>
+                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="#" class="">CART</a>
+                    <a href="checkout.html" class="">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="scroll-up" >
+        <a href="#header" class="fas fa-angle-up"></a>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style-checkout.css">
+
+    <link rel="icon" href="assets/img/icon/1.ico" type="image/icon type">
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font awesome -->
+    <title>Amad Furniture</title>
+</head>
+<body >
+    <div class="content" id="header">
+        <div class="sidebar">
+            <div class="sidebar--content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo/logo.png" alt=""  class="">
+                    </a>
+                </div>
+                
+                <div class="option">
+                    <div class="orange-lines"></div>
+                    <a href="index.html" class="">HOME</a>
+                    <a href="shop.html" class="">SHOP</a>
+                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="cart.html" class="">CART</a>
+                    <a href="#" class="">CHECKOUT</a>
+                    <div class="option-btn">
+                        <button class="">%Discount%</button>
+                        <button class="">New this week</button>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="" class="">CART <span>(0)</span></a>
+                    </div>
+                    <div class="favourite">
+                        <i class="fas fa-star"></i>
+                        <a href="" class="">FAVOURITE</a>
+                    </div>
+                    <div onclick="showSearchBar()" class="search">
+                        <i class="fas fa-search"></i>
+                        <a class="">SEARCH</a>
+                    </div>
+                    <div class="search-bar show-seacrh-bar">
+                        <div class="container">
+                            <i class="fas fa-search" ></i>
+                            <input onkeyup="showClearInput()"type="text" placeholder="Type your keyword..." class="">
+                            <div  onclick="clearInput()" class="clear-input-btn fas fa-times "> </div>
+                            <div onclick="hideSearchBar()" class="close-btn fas fa-times"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container checkout-wrapper">
+            <div class="row title">
+                <h3 class="">Checkout</h3>
+            </div>
+            <div class="row content">
+                <div class="checkout  col-8">
+                    <form action="" class=" container">
+                        <div class="info row">
+                            <div class="col">
+                                <input type="text" class="" placeholder="First Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="info row">
+                            <input type="text" class="" placeholder="Company Name">
+                        </div>
+                        <div class="info row">
+                            <input type="email" class="" placeholder="Email">
+                        </div>
+                        <div onclick="showCountrySelector()" class="info row">
+                            <div class="country">
+                                <input disabled class="" placeholder="Country">
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <div class="country-selector row">
+                            <div class="wrapper container">
+                                <div class="row">
+                                    <p class="">Việt Nam</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">United Kingdom</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">Germany</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">France</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">India</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">United States</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">Australia</p>
+                                </div>
+                                <div class="row">
+                                    <p class="">Brazil</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="info row">
+                            <input type="text" class="" placeholder="Address">
+                        </div>
+                        <div class="info row">
+                            <input type="text" class="" placeholder="Town">
+                        </div>
+                        <div class="info row">
+                            <div class="col">
+                                <input type="text" class="" placeholder="Zip Code">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="" placeholder="Phone No">
+                            </div>
+                        </div>
+                        <div class="info row message-field">
+                            <textarea placeholder="Leave a comment about your order" rows="4" ></textarea>
+                        </div>
+                        <div  class="options row">
+                            <input type="checkbox" class="">
+                            <span class="">Create an account</span>    
+                        </div>
+                        <div class="options row">
+                            <input type="checkbox" class="">
+                            <span class="">Ship to a different address</span>
+                        </div>
+                    </form>
+                
+                </div>
+                <div class="cart-total col-3 ">
+                    <div class="wrapper">
+                            <h4 class="">Cart Total</h4>
+                            <div class="">
+                                <span class=""> Subtotal: </span>
+                                <span class=""> $140.00 </span>
+                            </div>
+                            <div class="">
+                                <span class=""> Delivery: </span>
+                                <span class=""> Free </span>
+                            </div>
+                            <div class="">
+                                <span class=""> total: </span>
+                                <span class=""> $140.00 </span>
+                            </div>    
+                        </div>    
+                        <div class="payment-method">
+                            <div class="cod">
+                                <input type="checkbox" class="">
+                                <span class="">Cash on delivery</span>
+                            </div>
+                            <div class="online">
+                                <input type="checkbox" class="">
+                                <span class="">Paypal</span>
+                                <span class="">
+                                    <img src="assets/img/payment/paypal.png" alt="" class="">
+                                </span>
+                            </div>
+                            
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                        
+
+                    
+                </div>    
+                <div class="blank col-1"></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="discount">
+        <div class="discount-wrapper">
+            <div class="discount-left">
+                <h2>Subscribe for a <span>25% Discount</span></h2>
+                <p class="">
+                    Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. 
+                    Donec auctor interdum purus, ac finibus massa bibendum nec.
+                </p>
+            </div>
+            <div class="discount-right">
+                <form class="input-wrapper">
+                    <input type="email" id="email" name="email"class="" placeholder="Your E-mail">
+                    <input type="submit"class=""value="Subscribe">
+                </form>
+            </div>    
+        </div>
+        
+            
+        </div>
+    
+    <div class="fotter">
+        <div class="fotter-wrapper">
+            <div class="left">
+                <img src="assets/img/logo/logo-white.png" alt="" class="">
+                <p class="">
+                    Copyright ©2021 All rights reserved | This template is made with  
+                    <span class="far fa-heart"></span>
+                    by Colorlib & Re-distributed by Themewagon</p>
+            </div>
+            <div class="right">
+                <div class="fotter-nav">
+                    <a href="index.html" class="">HOME</a>
+                    <a href="shop.html" class="">SHOP</a>
+                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="cart.html" class="">CART</a>
+                    <a href="#" class="">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="scroll-up" >
+        <a href="#header" class="fas fa-angle-up"></a>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

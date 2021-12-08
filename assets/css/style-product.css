@@ -1,0 +1,182 @@
+
+ /* custom for product.html */
+
+ .sidebar--content .option a:not(:nth-child(4))::before{
+    width: 40px;
+}
+.sidebar--content .option a:hover::before,
+.sidebar--content .option a:nth-child(4)::before{
+    width: 80px;
+}
+
+.fotter .right a:nth-child(3){
+    color:#FBB710;
+    cursor:default;
+}
+.fotter .right a:first-child{
+    color:#fff;
+    cursor:pointer;
+}
+
+
+
+
+.description{
+    margin: 100px 15px;
+}
+
+.description .bread-crumb{
+    margin-top: 50px;
+    margin-bottom: 15px;
+
+}
+.description .bread-crumb span{
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+}
+.description .bread-crumb span:hover{
+    color:#FBB710
+}
+
+.description .picture .smaller{
+    margin-top: 20px;
+}
+
+.description .picture .big-one img,
+.description .picture .smaller img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.description-section{
+    margin-left: 30px;
+}
+
+.description-section .orange-line{
+    position: relative;
+    height: 3px;
+    width: 40px;
+    background-color: #FBB710;
+}
+.description-section .price{
+    color: #FBB710;
+}
+.description-section .star-review{
+    display: flex;
+    justify-content: space-between
+}
+.description-section .star{
+    font-size: 10px;
+    color: #FBB710;
+}
+
+.description-section .review{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.description-section .avaibility{
+    font-size: 14px;
+}
+
+
+.description-section .avaibility div{
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #28a745;
+    border:none;
+    display: inline-block;
+}
+.description-section .description{
+    font-weight: 700;
+    opacity: 0.6;
+}
+.description-section .quantity{
+    width: 200px;
+    height: 40px;
+    background-color: #ddd;
+    display:flex;
+    justify-content: content;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    opacity: 0.6;
+}
+.description-section .quantity p{
+    padding: 0 15px;
+    line-height: 40px;
+
+}
+.description-section .quantity .number{
+    flex:1;
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+}
+
+.description-section .quantity .up-down{
+    padding: 0 15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.description-section .add{
+    border: none;
+    background-color:#FBB710;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    height: 80px;
+    width: 310px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
