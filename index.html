@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/icon/1.ico" type="image/icon type">
-    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
-            crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome -->
     <title>Amad Furniture</title>
 </head>
-<body >
+
+<body>
     <div class="content" id="header">
         <div class="sidebar">
             <div class="sidebar--content">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt=""  class="">
+                        <img src="assets/img/logo/logo.png" alt="" class="">
                     </a>
                 </div>
-                
+
                 <div class="option">
                     <div class="orange-lines"></div>
                     <a href="#" class="">HOME</a>
                     <a href="shop.html" class="">SHOP</a>
-                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="product.html" class="">BEST SELLER</a>
                     <a href="cart.html" class="">CART</a>
                     <a href="checkout.html" class="">CHECKOUT</a>
                     <div class="option-btn">
@@ -48,9 +51,9 @@
                     </div>
                     <div class="search-bar show-seacrh-bar">
                         <div class="container">
-                            <i class="fas fa-search" ></i>
-                            <input onkeyup="showClearInput()"type="text" placeholder="Type your keyword..." class="">
-                            <div  onclick="clearInput()" class="clear-input-btn fas fa-times "> </div>
+                            <i class="fas fa-search"></i>
+                            <input onkeyup="showClearInput()" type="text" placeholder="Type your keyword..." class="">
+                            <div onclick="clearInput()" class="clear-input-btn fas fa-times "> </div>
                             <div onclick="hideSearchBar()" class="close-btn fas fa-times"></div>
                         </div>
                     </div>
@@ -146,51 +149,118 @@
             </div>
         </div>
     </div>
-    
+
     <div class="discount">
         <div class="discount-wrapper">
             <div class="discount-left">
                 <h2>Subscribe for a <span>25% Discount</span></h2>
                 <p class="">
-                    Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. 
+                    Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur.
                     Donec auctor interdum purus, ac finibus massa bibendum nec.
                 </p>
             </div>
             <div class="discount-right">
                 <form class="input-wrapper">
-                    <input type="email" id="email" name="email"class="" placeholder="Your E-mail">
-                    <input type="submit"class=""value="Subscribe">
+                    <input type="email" id="email" name="email" class="" placeholder="Your E-mail">
+                    <input type="submit" class="" value="Subscribe">
                 </form>
-            </div>    
+            </div>
         </div>
-        
-            
-        </div>
-    
+
+
+    </div>
+
     <div class="fotter">
         <div class="fotter-wrapper">
             <div class="left">
                 <img src="assets/img/logo/logo-white.png" alt="" class="">
                 <p class="">
-                    Copyright ©2021 All rights reserved | This template is made with  
+                    Copyright ©2021 All rights reserved | This template is made with
                     <span class="far fa-heart"></span>
-                    by Colorlib & Re-distributed by Themewagon</p>
+                    by Colorlib & Re-distributed by Themewagon
+                </p>
             </div>
             <div class="right">
                 <div class="fotter-nav">
                     <a href="#" class="">HOME</a>
                     <a href="shop.html" class="">SHOP</a>
-                    <a href="product.html" class="">PRODUCT</a>
+                    <a href="product.html" class="">BEST SELLER</a>
                     <a href="cart.html" class="">CART</a>
                     <a href="checkout.html" class="">CHECKOUT</a>
+
                 </div>
             </div>
         </div>
-        
+
     </div>
-    <div class="scroll-up" >
+    <div class="scroll-up">
         <a href="#header" class="fas fa-angle-up"></a>
+    </div>
+    <div class="chat">
+        <img onclick="openChatBox()" src="./assets/img/icon/chat-icon.png" alt="" class="chat-icon">
+        <div class="chat-notification">
+            <p class="number">1</p>
+        </div>
+        <!-- <div class="chat-box">
+            <div class="head">
+                <div class="">
+                    <div class="img">
+                        <img src="./assets/img/icon/1.ico" alt="">
+                    </div>
+                    <p class="">Contact Supplier</p>
+                </div>
+                <i onclick="closeChatBox()" class="fas fa-times"></i>
+            </div>
+            <div class="conversation">
+
+            </div>
+            <div class="wrapper">
+                <input class="text-area"></input>    
+                <i class="far fa-paper-plane"></i>
+            </div> -->
+        <div class="chat-box">
+            <div class="head">
+                <div class="avatar">
+                    <img src="./assets/img/icon/1.ico" alt="" class="">
+                </div>
+                <p class="name">Dương</p>
+                <i onclick="closeChatBox()" class="fas fa-times close-btn"></i>
+            </div>
+            <div class="conversation">
+                <p class="mess-greeting">Now you can chat with the seller</p>
+                <p class="mess-greeting">Say something</p>
+                <div class="group left">
+                    <div class="avatar">
+                        <img src="./assets/img/icon/1.ico" alt="" class="">
+                    </div>
+                    <div class="mess-container">
+                        <p class="mess">Hi there!!!</p>
+                        <p class="mess">How can I help you?</p>
+                    </div>
+                </div>
+                <!-- <div class="group right">
+                        <div class="avatar">
+                            <img src="./assets/img/user.jpg" alt="" class="">
+                        </div>
+                        <div class="mess-container">
+                            <p class="mess">1 sáđâsdácvx cbcvhcvn123 hêllô </p>
+                            <p class="mess">2 sdddddddddd ddddddádddddddácxccccccccccc</p>
+                        </div>
+                    </div> -->
+
+
+            </div>
+            <div class="type-zone">
+                <input type="text" class="message" placeholder="Aa">
+                <i onclick="sendMess()" class="fas fa-paper-plane send-btn"></i>
+            </div>
+
+        </div>
+
+
+    </div>
     </div>
 </body>
 <script src="./main.js"></script>
+
 </html>

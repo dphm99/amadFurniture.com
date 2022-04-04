@@ -43,11 +43,17 @@
     margin-top: 20px;
 }
 
-.description .picture .big-one img,
+
 .description .picture .smaller img{
     width: 100%;
 }
-
+.description .picture .big-one img{
+    display: none;
+}
+.description .picture .big-one .active-img{
+    display: block;
+    width: 100%;
+}
 
 
 

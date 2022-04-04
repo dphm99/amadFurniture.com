@@ -70,8 +70,7 @@
     z-index: 1;
     transition: 0.3s;
 
-    transform: translate(90px, -90px) scale(0.7);
-    opacity: 0;  
+    transform: translate(300px, -190px) scale(0);
  
 }
 .checkout-wrapper .country-selector .wrapper .row{
@@ -185,8 +184,9 @@
     font-weight: 500;
     border: none;
     margin-top: 100px;
+    opacity: 0.5;
+    cursor:default;
 }
-
 
 
 
